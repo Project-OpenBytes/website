@@ -1,0 +1,51 @@
+.licenseDetailContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @media screen and (max-width: 960px) {
+    flex-direction: column;
+  }
+}
+
+.licenseDetail {
+  max-width: 350px;
+
+  @media screen and (max-width: 960px) {
+    margin-top: 32px;
+  }
+}
+
+.detailTitle {
+  @apply text-20-32 font-regular text-primary-300;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.icon {
+  @apply bg-secondary-200 border-secondary-100 border-solid;
+
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-width: 3px;
+  margin: 8px 20px 0 0;
+}
+
+.detailDescriptionContainer {
+  margin-top: 24px;
+}
+
+.detailAuthor {
+  @apply text-16 font-semibold text-primary-100;
+}
+
+.detailDescription {
+  @apply text-16 font-regular text-primary-100;
+
+  @media screen and (max-width: 960px) {
+    @apply text-16-24;
+  }
+}

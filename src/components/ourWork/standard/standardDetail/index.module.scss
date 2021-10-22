@@ -1,0 +1,30 @@
+.standardDetailContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 16px 80px;
+
+  @media screen and (max-width: 960px) {
+    margin: 40px 24px 0;
+  }
+}
+
+.standardImg {
+  width: 125px;
+  height: 125px;
+  margin-bottom: 20px;
+}
+
+.standardTitle {
+  @apply text-20-32 font-semibold text-primary-100;
+
+  margin-bottom: 20px;
+}
+
+.standardDescription {
+  @apply text-16-24 font-regular text-primary-200;
+
+  text-align: center;
+  width: 350px;
+}

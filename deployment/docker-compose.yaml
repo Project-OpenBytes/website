@@ -1,0 +1,20 @@
+version: "3"
+services:
+
+  open-bytes:
+    image: {{ image_tag  }}
+    container_name: "{{ appId }}"
+    tty: true
+    privileged: true
+    ports:
+      - "4443:4443"
+    volumes:
+      - /var/log/open-bytes:/var/log/open-bytes
+    restart: always
+    healthcheck:
+      test: ["CMD","bash","-c","curl -H 'Connection:close' --head localhost:4443 || poweroff -f"]
+      interval: 1m
+      timeout: 2s
+      retries: 0
+    environment:
+      - LANG=en_US.UTF-8

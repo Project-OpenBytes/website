@@ -1,0 +1,13 @@
+.appBar {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 56px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  box-sizing: border-box;
+}

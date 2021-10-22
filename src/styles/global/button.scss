@@ -1,0 +1,50 @@
+.buttonOutline.graviti-btn-outlined.graviti-btn-primary {
+  @apply text-16 font-semibold text-secondary-100 border-secondary-100;
+
+  margin: 0 12px;
+
+  @media screen and (max-width: 960px) {
+    @apply text-16-24 font-semibold;
+
+    margin: 20px 0 0;
+    height: 48px;
+    width: 100%;
+  }
+}
+
+.textButton.graviti-btn-text.graviti-btn-primary {
+  @apply text-18 font-regular text-secondary-100;
+
+  text-decoration: underline;
+  padding: 0;
+}
+
+.filledButton.graviti-btn.graviti-btn-default.graviti-btn-md.graviti-btn-primary {
+  @apply bg-secondary-100 text-18-24 font-semibold;
+
+  height: 60px;
+  width: 200px;
+
+  @media screen and (max-width: 960px) {
+    @apply text-16-24;
+
+    height: 48px;
+    width: 100%;
+  }
+}
+
+.filledButtonIntro.graviti-btn.graviti-btn-default.graviti-btn-md.graviti-btn-primary {
+  @apply bg-secondary-100 text-20-32 font-semibold;
+
+  width: 309px;
+  height: 68px;
+  padding: 18px 24px;
+
+  @media screen and (max-width: 960px) {
+    @apply text-16-24;
+
+    width: 257px;
+    height: 48px;
+    padding: 12px 24px;
+  }
+}

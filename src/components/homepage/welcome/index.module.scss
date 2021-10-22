@@ -1,0 +1,17 @@
+.homeWrapper {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.links {
+  display: flex;
+  margin-top: 24px;
+}
+
+.divider {
+  margin: 0 16px;
+}

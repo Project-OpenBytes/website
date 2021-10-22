@@ -1,0 +1,34 @@
+@mixin reactive-wrapper() {
+  width: 1200px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 1248px) {
+    margin: 0 24px;
+    width: calc(100vw - 48px);
+  }
+
+  @media screen and (max-width: 1008px) {
+    margin: 0 24px;
+    width: 960px;
+  }
+}
+
+@mixin reactive-bg() {
+  min-width: 1008px;
+}
+
+@mixin filter-img() {
+  filter: grayscale(90%) brightness(50%) opacity(30%);
+  transition: all 0.3s;
+
+  &:hover {
+    filter: none;
+  }
+}
+
+@mixin small-screen {
+
+  @media screen and (max-width: 720px) {
+    @content;
+  }
+}

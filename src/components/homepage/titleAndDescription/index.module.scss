@@ -1,0 +1,53 @@
+.titleAndDescription {
+  display: flex;
+  max-width: 948px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 150px auto 0;
+
+  @media screen and (max-width: 960px) {
+    margin: 120px 0 0;
+  }
+
+  .title {
+    @apply text-54 text-primary-100 font-semibold italic;
+
+    margin-bottom: 24px;
+
+    @media screen and (max-width: 960px) {
+      @apply text-28;
+    }
+  }
+
+  .description {
+    @apply text-20-32 text-primary-100 font-regular;
+
+    margin-bottom: 24px;
+    text-align: center;
+    padding: 0 24px;
+
+    @media screen and (max-width: 960px) {
+      @apply text-16-24;
+
+      margin-bottom: 0;
+    }
+  }
+
+  .buttonGroup {
+    a {
+      text-decoration: none;
+
+      @media screen and (max-width: 960px) {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    @media screen and (max-width: 960px) {
+      display: flex;
+      flex-direction: column;
+      width: calc(100% - 48px);
+    }
+  }
+}

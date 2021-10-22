@@ -1,0 +1,94 @@
+{
+  "name": "update-temp",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "commit": "git-cz",
+    "commitmsg": "commitlint -e $GIT_PARAMS",
+    "prepare": "husky install"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged",
+    "commit-msg": "commitlint -e $GIT_PARAMS"
+  },
+  "lint-staged": {
+    "*.{js,jsx,scss,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write",
+      "eslint --fix",
+      "git add"
+    ],
+    "*.scss": [
+      "stylelint --syntax scss --fix",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -e $GIT_PARAMS"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "antd": "4.16.10",
+    "axios": "^0.21.1",
+    "bootstrap": "5.1.1",
+    "graviti-design": "^1.1.1-30",
+    "js-cookie": "^3.0.0",
+    "next": "11.1.0",
+    "next-seo": "^4.28.1",
+    "react": "17.0.2",
+    "react-bootstrap": "^2.0.0-rc.0",
+    "react-burger-menu": "^3.0.6",
+    "react-dom": "^17.0.2",
+    "react-query": "^3.21.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
+    "@types/js-cookie": "^2.2.7",
+    "@types/node": "^16.7.5",
+    "@types/react": "^17.0.19",
+    "@typescript-eslint/eslint-plugin": "^4.10.0",
+    "@typescript-eslint/parser": "^4.10.0",
+    "autoprefixer": "^9",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-next": "11.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-typescript": "^2.4.0",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jest": "^24.4.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-markdown": "^2.2.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^7.0.2",
+    "lint-staged": "^11.1.2",
+    "next-transpile-modules": "^8.0.0",
+    "postcss": "^7",
+    "prettier": "^2.2.0",
+    "sass": "^1.38.2",
+    "stylelint": "^13.13.1",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-standard": "^22.0.0",
+    "stylelint-scss": "^3.20.1",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
+    "typescript": "^4.4.2"
+  }
+}

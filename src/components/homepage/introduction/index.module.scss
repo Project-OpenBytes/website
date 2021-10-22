@@ -1,0 +1,67 @@
+.introductionOuterContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.introductionContainer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  margin: 50px 24px 0;
+
+  @media screen and (max-width: 960px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 34px;
+  }
+}
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0 26px 0 0;
+
+  @media screen and (max-width: 960px) {
+    margin: 0;
+  }
+
+  .introTitle {
+    @apply text-60 font-bold text-primary-100;
+
+    max-width: 654px;
+    margin-bottom: 24px;
+
+    @media screen and (max-width: 960px) {
+      @apply text-36-54;
+    }
+  }
+
+  .introDescription {
+    @apply text-20-32 font-regular text-primary-100;
+
+    max-width: 628px;
+    margin-bottom: 24px;
+
+    @media screen and (max-width: 960px) {
+      @apply text-16-24;
+
+      width: 100%;
+    }
+  }
+}
+
+.introductionLogo {
+  width: 520px;
+  height: 300px;
+
+  @media screen and (max-width: 960px) {
+    margin-top: 24px;
+    width: 327px;
+    height: 180px;
+  }
+}

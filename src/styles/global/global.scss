@@ -1,0 +1,158 @@
+@import 'variables';
+@import 'mixins';
+@import 'button';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.contentWidth {
+  width: 1200px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 1248px) {
+    margin: 0 24px;
+    width: calc(100vw - 48px);
+  }
+
+  @media screen and (max-width: 1008px) {
+    margin: 0 24px;
+    width: 960px;
+  }
+}
+
+.backgroundWidth {
+  min-width: 1008px;
+  overflow: hidden;
+}
+
+.title {
+  @apply text-60;
+
+  @include small-screen {
+    @apply text-44;
+  }
+}
+
+.joinUsBgWrapper {
+  width: 100%;
+  height: 696px;
+  display: flex;
+  justify-content: center;
+  margin: 60px 0 100px 0;
+
+  @media screen and (max-width: 960px) {
+    height: 100%;
+    margin: 38px 0 80px;
+  }
+
+  .joinUsContentWrapper {
+    height: 100%;
+    width: calc(100% - 48px);
+    max-width: 1200px;
+    margin: 0 24px;
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width: 960px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+.graviti-input.graviti-input-md {
+  margin-bottom: 20px;
+  width: 100%;
+
+  &::placeholder {
+    @apply text-14 font-regular;
+  }
+
+  input {
+    @apply text-primary-100;
+  }
+
+  .anticon {
+    display: none;
+  }
+}
+
+.graviti-select.graviti-select-borderless-default.graviti-select-single.graviti-select-show-arrow {
+  width: 100%;
+  @apply text-14 text-primary-100 font-regular;
+}
+
+.graviti-select-item-option-active.graviti-select-item-option-selected {
+  @apply text-primary-100 font-regular;
+}
+
+.graviti-select-item.graviti-select-item-option.graviti-select-item-option-selected {
+  @apply text-primary-100 font-regular;
+}
+
+.graviti-select-item-option-content {
+  @apply text-primary-100 font-regular;
+}
+
+.graviti-icon-btn.graviti-icon-btn-link.graviti-icon-btn-md.graviti-icon-btn-primary {
+  display: none;
+
+  @media screen and (max-width: 960px) {
+    display: inline;
+  }
+}
+
+.modal-opened {
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+.modal-content {
+
+  @media screen and (max-width: 960px) {
+    margin: 0 24px;
+  }
+}
+
+.aboutUs-Graviti-initiator {
+  @apply text-20 font-semibold text-primary-100;
+
+  @media screen and (max-width: 960px) {
+    @apply text-18-24;
+
+    margin-bottom: 24px;
+  }
+}
+
+.aboutUsImg {
+
+  @media screen and (min-width: 960px) {
+    width: 433px !important;
+    height: 300px !important;
+  }
+}
+
+.about-scope-text {
+  margin-bottom: 100px;
+
+  @media screen and (max-width: 960px) {
+    margin-bottom: 80px;
+  }
+}

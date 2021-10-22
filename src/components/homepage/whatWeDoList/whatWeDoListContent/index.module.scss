@@ -1,0 +1,85 @@
+.listContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 120px auto;
+
+  @media screen and (max-width: 960px) {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto 80px;
+  }
+}
+
+.titleAndDescription {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 600px;
+  margin: 0 24px;
+
+  .title {
+    .titleContent {
+      @apply text-28 text-primary-100 font-semibold italic;
+
+      display: block;
+      margin-bottom: 6px;
+
+      @media screen and (max-width: 960px) {
+        @apply text-20-32;
+
+        margin-bottom: 0;
+      }
+    }
+
+    .bottomLine {
+      @apply bg-secondary-100 border-secondary-100 border-solid;
+
+      height: 1px;
+      width: 90px;
+      border-width: 2px;
+      border-radius: 5px;
+      margin-bottom: 32px;
+
+      @media screen and (max-width: 960px) {
+        width: 48px;
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  .description {
+    @apply text-20-32 text-primary-100 font-regular;
+
+    @media screen and (max-width: 960px) {
+      @apply text-16-24;
+    }
+  }
+
+  @media screen and (max-width: 960px) {
+    width: 327px;
+  }
+}
+
+.img {
+  width: 384px;
+  height: 264px;
+  margin: 0 12px;
+
+  @media screen and (max-width: 960px) {
+    width: 327px;
+    height: 224px;
+    margin-top: 40px;
+  }
+}
+
+.even {
+
+  @media screen and (max-width: 960px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}

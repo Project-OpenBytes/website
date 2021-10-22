@@ -1,0 +1,36 @@
+.resourceDetailContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 368px;
+  max-width: 1200px;
+  margin: 56px auto calc(100px - 32px);
+
+  @media screen and (max-width: 960px) {
+    max-height: none;
+    margin-top: 30px;
+  }
+}
+
+.resource {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 0 32px 32px 32px;
+
+  @media screen and (max-width: 960px) {
+    margin: 0 0 40px;
+  }
+}
+
+.resourceImg {
+  width: 60px;
+  height: 60px;
+  margin-right: 24px;
+}
+
+.resourceDescription {
+  @apply text-16-24 font-regular text-primary-200;
+
+  max-width: 470px;
+}

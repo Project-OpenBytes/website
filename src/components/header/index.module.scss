@@ -1,0 +1,131 @@
+.headerWrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .headerTopBgWrapper {
+    @apply bg-primary-100;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+
+    @media screen and (max-width: 960px) {
+      display: none;
+    }
+
+    .imgContainer {
+      display: flex;
+      max-width: 1200px;
+      margin: 6px 24px;
+      width: 100%;
+
+      a {
+        margin: 0;
+        height: 20px;
+        display: flex;
+      }
+
+      img {
+        height: 100%;
+        width: 141px;
+
+        :hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .headerBottomBgWrapper {
+    @apply bg-white;
+
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .headerContentWrapper {
+      height: 100%;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @media screen and (max-width: 960px) {
+        height: 60px;
+      }
+
+      .imagePC {
+
+        @media screen and (max-width: 960px) {
+          display: none;
+        }
+      }
+
+      .imageMobile {
+        display: none;
+
+        @media screen and (max-width: 960px) {
+          display: inline;
+        }
+      }
+
+      img {
+        width: 185px;
+        height: 52px;
+
+        @media screen and (max-width: 960px) {
+          height: 36px;
+          width: 116px;
+        }
+      }
+
+      nav {
+        display: flex;
+        align-items: center;
+        width: 428px;
+        justify-content: space-between;
+
+        a {
+          @apply text-16-24 text-primary-100;
+
+          text-decoration: none;
+        }
+
+        @media screen and (max-width: 960px) {
+          display: none;
+          height: 60px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 960px) {
+    height: 60px;
+  }
+}
+
+.headerMenuWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 59px;
+  height: calc(100% - 59px);
+  width: 100vw;
+  z-index: 99999;
+  background: rgb(255, 255, 255, 0.98);
+  padding: 51px 0;
+
+  a {
+    @apply text-primary-100 text-18-25 font-bold;
+
+    margin-bottom: 35px;
+    text-decoration: none;
+  }
+}

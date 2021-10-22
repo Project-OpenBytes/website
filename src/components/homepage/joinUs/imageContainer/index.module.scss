@@ -1,0 +1,49 @@
+.imageBgWrapper {
+  @apply bg-gray-300;
+
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (max-width: 960px) {
+    width: 337px;
+    @apply bg-white;
+  }
+
+  .img {
+    margin: 48px 58px 58px 58px;
+    width: 464px;
+    height: 470px;
+
+    @media screen and (max-width: 960px) {
+      width: 303px;
+      height: 297px;
+    }
+  }
+}
+
+.textWrapper {
+  @apply text-44-60 font-semibold text-primary-100;
+
+  margin-top: 60px;
+
+  @media screen and (max-width: 960px) {
+    @apply text-36-54;
+  }
+}
+
+.imagePC {
+
+  @media screen and (max-width: 960px) {
+    display: none;
+  }
+}
+
+.imageMobile {
+  display: none;
+
+  @media screen and (max-width: 960px) {
+    display: inline;
+  }
+}

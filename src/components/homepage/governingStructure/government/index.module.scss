@@ -1,0 +1,44 @@
+.governmentContainer {
+  @apply border-primary-300 border-solid;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 46%;
+  height: 100%;
+  border-width: 0.5px;
+  border-radius: 4px;
+
+  @media screen and (max-width: 960px) {
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+}
+
+.title {
+  @apply text-20-1 font-bold text-primary-300;
+
+  text-align: center;
+  margin: 70px 0 86px;
+
+  @media screen and (max-width: 960px) {
+    @apply text-18-24;
+
+    margin-bottom: 60px;
+    margin-top: 30px;
+    text-align: center;
+  }
+}
+
+.govermentDetailWrapper {
+  display: flex;
+  justify-content: center;
+
+  @media screen and (max-width: 960px) {
+    display: flex;
+    flex-direction: column;
+  }
+}

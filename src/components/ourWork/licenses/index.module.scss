@@ -1,0 +1,22 @@
+.licenseContainer {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 24px;
+
+  @media screen and (max-width: 960px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.licenseTitle {
+  @apply text-30 font-semibold text-primary-100;
+
+  margin: 80px 0 32px;
+
+  @media screen and (max-width: 960px) {
+    margin: 60px 0 8px;
+    @apply text-20-32;
+  }
+}
