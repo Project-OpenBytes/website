@@ -130,25 +130,16 @@ const Footer: FC = () => {
       <div className={styles.copyRightBgWrapper}>
         <div className={styles.copyRightWrapper}>
           <div className={styles.copyRightText}>
-            Copyright © 2021 OpenBytes The Linux Foundation® . All rights reserved. The Linux
-            Foundation has registered trademarks and uses trademarks. For a list of trademarks of
-            The Linux Foundation, please see our{' '}
+            Copyright © 2021 OpenBytes a Series of LF Projects, LLC
+            <br/>
+            For web site terms of use, trademark policy, privacy policy and other project policies please see {' '}
             <a
-              href="https://www.linuxfoundation.org/trademark-usage"
+              href="https://lfprojects.org/policies"
               target="_blank"
               rel="noreferrer"
             >
-              Trademark Usage
-            </a>{' '}
-            page. Linux is a registered trademark of Linus Torvalds.{' '}
-            <a href="https://www.linuxfoundation.org/privacy" target="_blank" rel="noreferrer">
-              Privacy Policy
-            </a>{' '}
-            and{' '}
-            <a href="https://www.linuxfoundation.org/terms" target="_blank" rel="noreferrer">
-              Terms of Use
-            </a>
-            .
+              https://lfprojects.org/policies
+            </a>.
           </div>
         </div>
       </div>
